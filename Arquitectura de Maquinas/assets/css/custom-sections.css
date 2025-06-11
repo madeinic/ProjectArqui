@@ -1,0 +1,361 @@
+/* ================================
+   CUSTOM SECTIONS STYLES
+   ================================ */
+
+/* CPU Instruction Cycle Section */
+.cpu-cycle {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+}
+
+.cycle-step {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid #2c5aa0;
+}
+
+.cycle-step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #2c5aa0, #1e3d72);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  font-size: 2rem;
+}
+
+.cycle-step h4 {
+  color: #2c5aa0;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.cycle-step p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.cycle-flow {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.flow-arrow {
+  font-size: 2rem;
+  color: #2c5aa0;
+  margin-bottom: 15px;
+}
+
+.flow-arrow i {
+  margin: 0 10px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Memory Hierarchy Section */
+.memory-hierarchy {
+  background: linear-gradient(135deg, #1e3d72 0%, #2c5aa0 100%);
+  padding: 80px 0;
+  color: white;
+}
+
+.memory-hierarchy .section-title h2,
+.memory-hierarchy .section-title span {
+  color: white;
+}
+
+.memory-pyramid {
+  position: relative;
+}
+
+.memory-level {
+  margin-bottom: 25px;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLevel 0.8s ease forwards;
+}
+
+.memory-level:nth-child(1) { animation-delay: 0.2s; }
+.memory-level:nth-child(2) { animation-delay: 0.4s; }
+.memory-level:nth-child(3) { animation-delay: 0.6s; }
+.memory-level:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes slideInLevel {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.level-content {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.level-content:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.02);
+}
+
+.level-1 .level-content { border-left: 5px solid #ff6b6b; }
+.level-2 .level-content { border-left: 5px solid #4ecdc4; }
+.level-3 .level-content { border-left: 5px solid #45b7d1; }
+.level-4 .level-content { border-left: 5px solid #96ceb4; }
+
+.level-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.level-1 .level-icon { background: linear-gradient(135deg, #ff6b6b, #ee5a52); }
+.level-2 .level-icon { background: linear-gradient(135deg, #4ecdc4, #44a08d); }
+.level-3 .level-icon { background: linear-gradient(135deg, #45b7d1, #3498db); }
+.level-4 .level-icon { background: linear-gradient(135deg, #96ceb4, #85c1a3); }
+
+.level-info h4 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.level-specs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.level-specs span {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.level-info p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.hierarchy-explanation {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hierarchy-explanation h5 {
+  color: #4ecdc4;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Modern Architecture Trends Section */
+.modern-trends {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+}
+
+.trend-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  border-top: 4px solid #2c5aa0;
+}
+
+.trend-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.trend-card .card-header {
+  background: linear-gradient(135deg, #2c5aa0, #1e3d72);
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.trend-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 1.8rem;
+}
+
+.trend-card h4 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.trend-card .card-body {
+  padding: 25px 20px;
+}
+
+.trend-card .card-body p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.trend-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.benefit-tag {
+  background: linear-gradient(135deg, #2c5aa0, #1e3d72);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.future-outlook {
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #2c5aa0;
+}
+
+.future-outlook h5 {
+  color: #2c5aa0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.future-outlook p {
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cycle-step {
+    margin-bottom: 20px;
+  }
+  
+  .step-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .cycle-step h4 {
+    font-size: 1.1rem;
+  }
+  
+  .level-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .level-specs {
+    justify-content: center;
+  }
+  
+  .trend-card .card-header {
+    padding: 20px 15px;
+  }
+  
+  .trend-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .trend-card h4 {
+    font-size: 1.1rem;
+  }
+  
+  .future-outlook {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cpu-cycle,
+  .memory-hierarchy,
+  .modern-trends {
+    padding: 60px 0;
+  }
+  
+  .cycle-step,
+  .level-content,
+  .trend-card .card-body {
+    padding: 20px 15px;
+  }
+  
+  .flow-arrow {
+    font-size: 1.5rem;
+  }
+  
+  .benefit-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+}
+
+/* Animation enhancements */
+@media (prefers-reduced-motion: no-preference) {
+  .trend-card:hover .trend-icon {
+    animation: bounce 0.6s ease;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 60%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    80% { transform: translateY(-5px); }
+  }
+}
